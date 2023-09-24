@@ -58,7 +58,7 @@ def predict_next_word(model, tokenizer, text, num_words=1):
 
 
 while(True):
-  text = input("Nyora manzwi mashanu:")
+  text = st.input("Nyora manzwi mashanu:")
 
 
   if st.text_input == "0":
@@ -67,16 +67,16 @@ while(True):
 
   else:
    try:
-    user_input = text.split(" ")
-    user_input = text[-5:]
+    user_input = st.text.split(" ")
+    user_input = st.text[-5:]
     print(text)
 
-    predicted_word = predict_next_word(model, tokenizer, text, num_words=1)
-    print(f"inzwi rawanikwa rinoteera manzwi amaisa ndeiro: {predicted_word}")
+    predicted_word = st.predict_next_word(model, tokenizer, text, num_words=1)
+    st.print(f"inzwi rawanikwa rinoteera manzwi amaisa ndeiro: {predicted_word}")
 
 
 
 
    except Exception as e:
-    print("Error: ", e)
+    st.print("Error: ", e)
     continue
