@@ -58,7 +58,7 @@ def predict_next_word(model, tokenizer, text, num_words=1):
 
 
 while(True):
-  text = st.text_input("Nyora manzwi mashanu:")
+  text1 = st.text_input("Nyora manzwi mashanu:")
 
 
   if st.text_input == "0":
@@ -69,7 +69,7 @@ while(True):
    try:
     user_input = st.text.split(" ")
     user_input = st.text[-5:]
-    st.text(text)
+    st.text(text1)
 
     predicted_word = st.predict_next_word(model, tokenizer, text, num_words=1)
     st.text(f"inzwi rawanikwa rinoteera manzwi amaisa ndeiro: {predicted_word}")
