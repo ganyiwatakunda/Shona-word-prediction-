@@ -58,7 +58,7 @@ def predict_next_word(model, tokenizer, text, num_words=1):
 
 
 while(True):
-  text = st.input("Nyora manzwi mashanu:")
+  text = st.text_input("Nyora manzwi mashanu:")
 
 
   if st.text_input == "0":
