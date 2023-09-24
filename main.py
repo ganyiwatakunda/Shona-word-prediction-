@@ -63,7 +63,7 @@ def predict_next_word(model, tokenizer, text, num_words=1):
     return ' '.join(text.split(' ')[-num_words:])
 
 def main():
-    user_input = st.text_input('Enter')
+    user_input = st.text_input('nyora manzwi mashanu')
     lst = list(user_input.split())
 
     if st.button("Generate"):
