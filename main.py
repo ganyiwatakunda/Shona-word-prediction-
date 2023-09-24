@@ -78,5 +78,5 @@ while(True):
 
 
    except Exception as e:
-    st.text("Error: ", e)
+    # st.text("Error: ", e)
     continue
