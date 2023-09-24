@@ -18,6 +18,9 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Load the previously saved model
 model = load_model('best_performing_model2.h5')
 
+st.title('Dudziramanzwi rechishona rinobatsira kunyora inzwi rinoteverea manzwi atinenge taisa ')
+
+
 def predict_next_word(model, tokenizer, text, num_words=1):
     """
     Predict the next set of words using the trained model.
