@@ -1,5 +1,16 @@
 import os
 import streamlit as st
+#importing and loading  all the libraries used in this assignment
+import numpy as np
+import tensorflow as tf
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.layers import Embedding, LSTM, Dense
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.utils import to_categorical
+import re
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 
 from keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
