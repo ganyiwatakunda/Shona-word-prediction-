@@ -19,7 +19,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 # Load the previously saved model
 model = load_model('best_performing_model2.h5')
 
-st.title('Dudziramanzwi rechishona rinobatsira kunyora inzwi rinoteverea manzwi atinenge taisa ')
+st.title('Next Word Prediction in Chishona')
 #st.button("https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4#scrollTo=Zx7NZs1rG9gq")
 
 link = '[Link to colab noebook](https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4?usp=sharing)'
