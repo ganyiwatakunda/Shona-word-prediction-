@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-import tokenizer
 #importing and loading  all the libraries used in this assignment
 import numpy as np
 import tensorflow as tf
@@ -21,6 +20,9 @@ model = load_model('best_performing_model2.h5')
 
 st.title('Dudziramanzwi rechishona rinobatsira kunyora inzwi rinoteverea manzwi atinenge taisa ')
 
+# loading
+with open('tokenizer.pickle', 'rb') as handle:
+    tokenizer = pickle.load(handle)
 
 def predict_next_word(model, tokenizer, text, num_words=1):
     """
