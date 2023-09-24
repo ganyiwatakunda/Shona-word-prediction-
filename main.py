@@ -21,10 +21,8 @@ model = load_model('best_performing_model2.h5')
 
 st.title('Dudziramanzwi rechishona rinobatsira kunyora inzwi rinoteverea manzwi atinenge taisa ')
 #st.button("https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4#scrollTo=Zx7NZs1rG9gq")
-url = "https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4#scrollTo=Zx7NZs1rG9gq"
-
-if st.button('Open browser'):
-    webbrowser.open_new_tab(url)
+link = '[GitHub](http://github.com)'
+st.markdown(link, unsafe_allow_html=True)
 # loading
 with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
