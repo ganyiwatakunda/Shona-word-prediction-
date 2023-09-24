@@ -62,21 +62,21 @@ while(True):
 
 
   if st.text_input == "0":
-      print("chiitiko ichi chaperera pano .....")
+      st.text("chiitiko ichi chaperera pano .....")
       break
 
   else:
    try:
     user_input = st.text.split(" ")
     user_input = st.text[-5:]
-    print(text)
+    st.text(text)
 
     predicted_word = st.predict_next_word(model, tokenizer, text, num_words=1)
-    st.print(f"inzwi rawanikwa rinoteera manzwi amaisa ndeiro: {predicted_word}")
+    st.text(f"inzwi rawanikwa rinoteera manzwi amaisa ndeiro: {predicted_word}")
 
 
 
 
    except Exception as e:
-    st.print("Error: ", e)
+    st.text("Error: ", e)
     continue
