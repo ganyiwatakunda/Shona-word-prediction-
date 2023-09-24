@@ -59,13 +59,13 @@ def main():
     user_input = st.text_input('Enter')
     lst = list(user_input.split())
 
-if st.button("Generate"):
-    if (user_input is not None and len(lst)==5):
-        result = predict_next_word(model, tokenizer, user_input, num_words=1)
-        st.success(result)
+    if st.button("Generate"):
+        if (user_input is not None and len(lst)==5):
+            result = predict_next_word(model, tokenizer, user_input, num_words=1)
+            st.success(result)
 
-    else:
-        st.write("Please enter five words")
+        else:
+            st.write("Please enter five words")
 
 if __name__ == '__main__':
     main()
