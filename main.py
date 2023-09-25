@@ -22,7 +22,7 @@ model = load_model('best_performing_model2.h5')
 st.title('Next Word Prediction in Chishona')
 #st.button("https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4#scrollTo=Zx7NZs1rG9gq")
 
-link = '[Link to colab noebook](https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4?usp=sharing)'
+link = '[Link to colab notebook](https://colab.research.google.com/drive/1wjFB3dIQ5Anr5oXmX5BJIo4Q_TtLkSP4?usp=sharing)'
 st.markdown(link, unsafe_allow_html=True)
 # loading
 with open('tokenizer.pickle', 'rb') as handle:
